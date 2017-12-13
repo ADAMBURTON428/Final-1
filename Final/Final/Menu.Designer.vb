@@ -25,6 +25,8 @@ Partial Class Menu
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu))
         Me.picLogo = New System.Windows.Forms.PictureBox()
         Me.lblLogoName = New System.Windows.Forms.Label()
+        Me.btnStart = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,11 +50,33 @@ Partial Class Menu
         Me.lblLogoName.TabIndex = 1
         Me.lblLogoName.Text = "TurtleEntertainments"
         '
+        'btnStart
+        '
+        Me.btnStart.Location = New System.Drawing.Point(170, 69)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(85, 39)
+        Me.btnStart.TabIndex = 2
+        Me.btnStart.Text = "Start"
+        Me.btnStart.UseVisualStyleBackColor = True
+        Me.btnStart.Visible = False
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(170, 123)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(85, 39)
+        Me.btnExit.TabIndex = 3
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.Visible = False
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(430, 346)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.lblLogoName)
         Me.Controls.Add(Me.picLogo)
         Me.Name = "Menu"
@@ -64,4 +88,6 @@ Partial Class Menu
     End Sub
     Friend WithEvents picLogo As System.Windows.Forms.PictureBox
     Friend WithEvents lblLogoName As System.Windows.Forms.Label
+    Friend WithEvents btnStart As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
 End Class
