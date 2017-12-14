@@ -1,4 +1,4 @@
-﻿Public Class Menu
+﻿Public Class MainMenu
 
     Dim second As Integer
 
@@ -20,6 +20,14 @@
 
     End Sub
 
+    Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
+        Dim Box = New Beginning
+        Box.Show()
+        Me.Visible = False
+    End Sub
 
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
 End Class
 
