@@ -22,11 +22,13 @@ Partial Class Menu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu))
         Me.picLogo = New System.Windows.Forms.PictureBox()
         Me.lblLogoName = New System.Windows.Forms.Label()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -44,6 +46,7 @@ Partial Class Menu
         '
         Me.lblLogoName.AutoSize = True
         Me.lblLogoName.Font = New System.Drawing.Font("Comic Sans MS", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLogoName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.lblLogoName.Location = New System.Drawing.Point(16, 260)
         Me.lblLogoName.Name = "lblLogoName"
         Me.lblLogoName.Size = New System.Drawing.Size(402, 51)
@@ -70,10 +73,16 @@ Partial Class Menu
         Me.btnExit.UseVisualStyleBackColor = True
         Me.btnExit.Visible = False
         '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 60000
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(430, 346)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnStart)
@@ -90,4 +99,5 @@ Partial Class Menu
     Friend WithEvents lblLogoName As System.Windows.Forms.Label
     Friend WithEvents btnStart As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 End Class
