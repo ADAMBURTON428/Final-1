@@ -76,6 +76,12 @@
     <Compile Include="Beginning.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="B_Part1.Designer.vb">
+      <DependentUpon>B_Part1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B_Part1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Menu.Designer.vb">
       <DependentUpon>Menu.vb</DependentUpon>
     </Compile>
@@ -99,6 +105,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Beginning.resx">
+      <DependentUpon>Beginning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B_Part1.resx">
+      <DependentUpon>B_Part1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +132,15 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\village.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\village1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\village11.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
