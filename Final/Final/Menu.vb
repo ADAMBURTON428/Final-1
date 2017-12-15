@@ -17,7 +17,6 @@
             btnStart.Visible = True
             btnExit.Visible = True
         End If
-
     End Sub
 
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
