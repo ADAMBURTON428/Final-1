@@ -38,7 +38,7 @@ Partial Class B_Part1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(925, 400)
+        Me.ClientSize = New System.Drawing.Size(358, 399)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "B_Part1"
         Me.Text = "B_Part1"
