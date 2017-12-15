@@ -23,7 +23,6 @@ Partial Class MainMenu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainMenu))
         Me.picLogo = New System.Windows.Forms.PictureBox()
         Me.lblLogoName = New System.Windows.Forms.Label()
         Me.btnStart = New System.Windows.Forms.Button()
@@ -34,7 +33,7 @@ Partial Class MainMenu
         '
         'picLogo
         '
-        Me.picLogo.Image = CType(resources.GetObject("picLogo.Image"), System.Drawing.Image)
+        Me.picLogo.Image = Global.Final.My.Resources.Resources.TurtleGames
         Me.picLogo.Location = New System.Drawing.Point(125, 45)
         Me.picLogo.Name = "picLogo"
         Me.picLogo.Size = New System.Drawing.Size(200, 200)
